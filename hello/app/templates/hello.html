@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>No title</title>
+    {% endif %}
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/static/common.css">
+</head>
+<body>
+<div class="body-container">
+<div class="message">
+Hello, {{ user.name }} {% if user.gender=='M' %}先生{% else %}女士{% endif %}
+</div>
+</div>
+</body>
+</html>
